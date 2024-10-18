@@ -1,54 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Movie Universe</title>
 
-    <link rel="stylesheet" href="style.css">
-    <title>Movie Universe</title>
-</head>
-<body>
-    <section class="movie">
-        <div class="title">
-            <h2> Movies </h2>
-        </div>
-        <!-- filter button -->
-        <div class="btn-container">
-            <button class="filter-btn" type="button" data-id="all">all</button>
-            <button class="filter-btn" type="button" data-id="action">action</button>
-            <button class="filter-btn" type="button" data-id="comedy">Comedy</button>
-            <button class="filter-btn" type="button" data-id="horror">horror</button>
-            <button class="filter-btn" type="button" data-id="fantasy">fantasy</button>
-            
-        </div>
-        <!-- movie info-->
-        <div class="section-center">
-            <!-- single info -->
-            <article class="movie-item">
-   
-                <div class="movie-info">
-   
-                    <header>
-                        <h4>IT</h4>
-                    </header>
-   
-                    <img src="/images/item1.png" class="photo" alt="image" />
-           
-                    <span class="rating"> IMDB rating: 7.3/10 </span>
-              
-                    <p class="movie-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sit atque  cumque natus totam magnam! Assumenda magnam nihil mollitia accusantium velit perferendis labore, natus doloremque voluptates excepturi repudiandae vel voluptas.</p>
-   
-                    <span>
-                        <button class="watch-btn">Watch</button>
-                    </span>
-                  
-                </div>
-                   
-            </article>
-        </div>
-    </section>
-   
-    
-</body>
-<script src="app.js"></script>
+     <!-- Fonts link -->
+     <link rel="./fontawesome-free-5.12.0-web/css/all.min.css"/>
+
+     <!-- css link-->
+     <link rel ="stylesheet" href="style.css" />
+     
+ </head>
+ <body>
+        <section class="movie">
+            <div class="title">
+              <h2> Movies </h2>
+            </div>
+            <!-- filter button -->
+            <div class="btn-container">
+                <button class="filter-btn" type="button" data-id="all">all</button>
+                <button class="filter-btn" type="button" data-id="action">action</button>
+                <button class="filter-btn" type="button" data-id="comedy">comedy</button>
+                <button class="filter-btn" type="button" data-id="horror">horror</button>
+                <button class="filter-btn" type="button" data-id="fantasy">dessert</button> 
+         
+            </div>
+            <!-- menu item -->
+            <div class="section-center">
+                <!-- single info -->
+                <article class="movie-item">
+                    <div class="movie-info">
+                        <header>
+                           <h4>IT</h4>
+                        </header>
+
+                        <img src="/images/item1.png" class="photo"    alt="image" />
+                    </div>
+                    <div class="movie-info">
+                        <span class="rating">IMDB rating: 7.3/10</span>
+                        <p class="movie-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sit atque cumque natus totam magnam! Assumenda magnam nihil mollitia accusantium velit perferendis labore, natus doloremque voluptates excepturi repudiandae vel voluptas.</p>
+                        <span>
+                           <button class="watch-btn">Watch</button>
+                        </span>
+                    </div>
+                </article> 
+            </div>
+        </section>
+        <!-- App js-->
+        <script src="app.js"></script>
+    </body>
 </html>
