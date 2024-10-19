@@ -64,7 +64,7 @@
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
+  background: var(--clr-black);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -171,6 +171,7 @@ main {
 .title {
   text-align: center;
   margin-bottom: 2rem;
+  color: var(--clr-gold);
 }
 /* .underline {
   width: 5rem;
@@ -221,17 +222,25 @@ main {
 }
 .movie-info header {
   display: flex;
-  justify-content: center;
-  /* border-bottom: 0.5px dotted var(--clr-grey-5); */
+
 }
-.movie-info h4 {
+ h4 {
   margin-bottom: 0.5rem;
+  text-align: center;
+  color: var(--clr-gold);
+  letter-spacing: 0px;
+  font-size: 1.5rem;
 }
- span {
+.rating{
+  margin-top: 1rem;
   display: flex;
+  letter-spacing: 0px;
   justify-content: center;
+  letter-spacing: 0px;
+  color: var(--clr-gold);
 }
 .movie-text {
+  color: var(--clr-white);
   text-align: center;
   margin-bottom: 0;
   padding-top: 0.5rem;
