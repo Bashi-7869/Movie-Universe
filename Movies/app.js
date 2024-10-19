@@ -346,3 +346,39 @@ window.addEventListener("DOMContentLoaded", () => {
     displayMovie = displayMovie.join("");
     sectionCenter.innerHTML = displayMovie;
 }
+
+function displayMovieButtons () {
+     
+    const movieGenres = movie.reduce ((values,info) => {
+        if(!values.includes(info.genres)) {
+            values.push(info.genres)
+        }
+          return values;
+          
+    }, ["all"]);
+    
+    const genresBtns = movieGenres.map((genres) => {
+        return `<button class="filter-btn" type="button" data-id=${genres}>${genres}</button>`
+    })
+    .join("");
+
+    btnContainer.innerHTML = genresBtns;
+    const filterBtns = btnContainer.querySelectorAll('.filter-btn');
+
+    filterBtns.forEach(function(btn){
+        btn.addEventListener("click", function (e) {
+            const btnGenres = e.currentTarget.dataset.id;
+            const filterMovie = movie.filter(movieInfo => {
+                if(movieInfo.genres === btnGenres){
+                    return movieInfo;
+                };
+            });
+
+            if(btnGenres === "all"){
+                displayMovieInfo(movie)
+            }else{
+                displayMovieInfo(filterMovie)
+            }
+        });
+    });
+};
