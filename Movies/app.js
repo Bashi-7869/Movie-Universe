@@ -121,7 +121,7 @@ const movie = [
     {
         id:12,
         title:"Shutter Island",
-        genres: "Myster",
+        genres: "Mystery",
         img: "/images/item27.jpg",
         rating: `IMDB rating : 7.3/10`,
         desc:` The story take place  at a fully operational dinosaur theme park called Jurassic world there a dinosur called indominus which escapes and wreaks havoc on the park. the park manager Claire Dearing along with dinosaur trainer owen Grady must find a way to save the guests including Clair's nephews.`,
